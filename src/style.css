@@ -1102,7 +1102,8 @@ canvas {
   pointer-events: none;
   transition:
     opacity 420ms ease,
-    transform 420ms ease;
+    transform 420ms ease,
+    filter 220ms ease;
 }
 
 .intro-overlay.is-revealed .intro-video {
@@ -1121,8 +1122,9 @@ canvas {
 }
 
 .start-button:hover {
-  background-image: url('/assets/videos/intro/hover%20boton.png');
-  filter: hue-rotate(-24deg);
+  animation-play-state: paused;
+  transform: translateY(0) scale(1.03);
+  filter: hue-rotate(-20deg) brightness(1.08);
 }
 
 .start-button:active {

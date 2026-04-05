@@ -38,7 +38,7 @@ giftIntroOverlay.innerHTML = `
 app.appendChild(giftIntroOverlay)
 
 const ROOM_PLAYER_SPEED_PX_PER_SEC = 420
-const ROOM_PLAYER_WALK_ANIMATION_STEP_MS = 120
+const ROOM_PLAYER_WALK_ANIMATION_STEP_MS = 90
 const ROOM_PLAYER_WALK_FRAME_SEQUENCE = ['base', 'step1', 'base', 'step2']
 const ROOM_PLAYER_COLLISION_SWEEP_STEP_PX = 6
 const ROOM_ENTRY_ZOOM_HOLD_MS = 2000
@@ -81,6 +81,53 @@ const ROOM_PLAYER_SPRITES = {
     step2: '/assets/images/character/base/personaje derecha 2.png',
   },
 }
+
+const ASSET_WARMUP_IMAGE_SOURCES = [
+  '/assets/videos/intro/boton.png',
+  '/assets/videos/intro/hover boton.png',
+  '/assets/images/backgrounds/wardrobe/fondovestuario.png',
+  '/assets/images/character/base/cuerpodesnudo.png',
+  '/assets/images/backgrounds/wardrobe/evo(1).png',
+  '/assets/images/backgrounds/wardrobe/jojolop(1).png',
+  '/assets/images/backgrounds/wardrobe/shun(1).png',
+  '/assets/images/backgrounds/wardrobe/evo speech.gif',
+  '/assets/images/backgrounds/wardrobe/jojolop speech.gif',
+  '/assets/images/backgrounds/wardrobe/shun speech.gif',
+  '/assets/images/character/outfits/conjunto 1 arriba.png',
+  '/assets/images/character/outfits/conjunto 1 medio.png',
+  '/assets/images/character/outfits/conjunto 1 abajo.png',
+  '/assets/images/character/outfits/conjunto 2 arriba.png',
+  '/assets/images/character/outfits/conjunto 2 medio.png',
+  '/assets/images/character/outfits/conjunto 2 abajo.png',
+  '/assets/images/character/outfits/conjunto 3 arriba.png',
+  '/assets/images/character/outfits/conjunto 3 medio.png',
+  '/assets/images/character/outfits/conjunto 3 abajo.png',
+  '/assets/images/backgrounds/room/background.PNG',
+  '/assets/images/backgrounds/room/frame.PNG',
+  '/assets/images/backgrounds/room/mueble detras.PNG',
+  '/assets/images/backgrounds/room/mueble detras 2.png',
+  '/assets/images/backgrounds/room/mueble detras 3.png',
+  '/assets/images/backgrounds/room/mueble adelante.png',
+  ROOM_LETTER_CLOSED_IMAGE,
+  ROOM_LETTER_OPEN_IMAGE,
+  ...Object.values(ROOM_PLAYER_SPRITES).flatMap((directionSet) => Object.values(directionSet)),
+]
+
+const warmedImages = []
+
+const warmupImageAssets = (sources) => {
+  const uniqueSources = [...new Set(sources.filter(Boolean))]
+
+  for (const source of uniqueSources) {
+    const image = new Image()
+    image.decoding = 'async'
+    image.loading = 'eager'
+    image.src = source
+    warmedImages.push(image)
+  }
+}
+
+warmupImageAssets(ASSET_WARMUP_IMAGE_SOURCES)
 
 const introOverlay = document.createElement('div')
 introOverlay.className = 'intro-overlay is-gift-locked'
