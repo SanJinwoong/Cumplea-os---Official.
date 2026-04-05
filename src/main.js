@@ -56,7 +56,9 @@ Dibujas increible aunque no lo quieras aceptar, esta semana es santa gracias a t
 Atte.: jojolove`,
   2: `Lala feliz cum espero y no te hayas enojado por no felicitarte en tu cum, ni en el grupo sinceramente odio a las personas que piden que las feliciten o que le den su regalo, no lo se es algo que me irrita pq siento que exigen cuando asi no funciona las cosas uk, y tambien para molestarte por lo de ale o como se llame ni la topo w, gracias por jugar conmigo aprecio el tiempo que pasamos, siento que res la mejor para jugar cualquier juego uwu, asi que solo pensare en ti cada que quiera entrarle a un nuevo juego, pq para las otras cosas no owO, este es la primera vez que le hago un programa para alguien, asi que aprecialo pq esto cobraria una persona de programacion que hasta te regale un dominio que cuesta para subirte en las redes pero buee, no entenderias todas las noche que pase para esto para que luego te quejes que no hago lo mismo que tu bruh, pero bueno solo disfruta pq de mi parte no vas a recibir otro regalo JAJAJA (ojoconesow) nada tqm si llego a distanciarme no te sorprendas la neta ya di mi todo contigo y no te dais cuenta.
 att :shunwoochin`,
-  3: `ola w no mande mis deseo w sigo siendo shunwoo pero escriubiendo como si fuera evo w jaja lol que pedo w att evo : omg yetsbeiib`,
+  3: `FELIZ CUMPLEAÑOS LALA!!
+te amo mucho, gracias por un añito más de tu amistad y compañía aunque sea virtual, no sabes lo mucho que te quiero y lo mucho que me gusta hablarte, gracias por todos esos momentos divertidos que nos regalas a mí y a todos los que te rodean, eres una chica increíble que se merece todo lo bonito del mundo, espero que cumplas muchos años más y que nuestra amistad continúe siendo así de bonita,TE QUIERO MUCHO POOKIE WOOKIE
+Att: chevoweboestepedewebo`,
 }
 
 const ROOM_PLAYER_SPRITES = {
