@@ -1122,9 +1122,10 @@ canvas {
 }
 
 .start-button:hover {
+  background-image: url('/assets/videos/intro/hover%20boton.png');
   animation-play-state: paused;
   transform: translateY(0) scale(1.03);
-  filter: hue-rotate(-20deg) brightness(1.08);
+  filter: hue-rotate(-24deg);
 }
 
 .start-button:active {
